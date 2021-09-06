@@ -11,7 +11,7 @@ The Machine Learning Models are programmed in _Python_ using the _scikit-learn_ 
 
 The models had the following accuracies when the dataset was shuffled, the models were trained using half of the dataset and then tested using the other half:
 
-<img src="accuracies/accuracies.png">
+<img src="accuracies.png">
 
 __The code for the Machine Learning Models is located in the 'models' file of this repository.__
 

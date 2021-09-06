@@ -1,0 +1,62 @@
+body {
+	background-color: #dc7a83;
+	color: white;
+	text-align: center;
+}
+
+.results {
+	min-height: 100vh;
+}
+
+.home, .results, .loadingScreen {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-check-input, .form-check-label {
+	margin-left: 1%;
+}
+
+.survey {
+	width: 40%;
+	margin: 2% auto;
+}
+
+.modelInfo {
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #0c63e4;
+}
+
+.question {
+	border: 1px solid #bfd9ff;
+    border-radius: 5px;
+	padding: 2% 2% 0 2%;
+	background-color: #e7f1ff;
+	color: #0c63e4;
+	margin-bottom: 2%;
+}
+
+.red {
+	color: #dc3545;
+}
+
+.btn-outline-danger {
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+
+.btn-outline-success {
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
