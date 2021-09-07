@@ -7,7 +7,7 @@ covidML consists of 3 parts-
 - The frontend UI.
 
 ## The Machine Learning Models
-The Machine Learning Models are programmed in _Python_ using the _scikit-learn_ library. There are 3 models: _a Perceptron, a Support Vector Machine (SVM) and a Multilayer Perceptron (a type of Artificial Neural Network)_. The models were trained using the dataset and were then saved using the _joblib_ library. 
+The Machine Learning Models are programmed in _Python_ using the _scikit-learn_ library. There are 3 models: _a Perceptron, a Support Vector Machine (SVM) and a Multilayer Perceptron (a type of Artificial Neural Network)_. The models were trained using the dataset and were then saved using the _joblib_ library. The dataset was taken from the following link: _https://www.kaggle.com/hemanthhari/symptoms-and-covid-presence?select=Covid+Dataset.csv_.
 
 The models had the following accuracies when the dataset was shuffled, the models were trained using half of the dataset and then tested using the other half:
 
