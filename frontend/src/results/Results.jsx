@@ -1,5 +1,6 @@
 import React from "react";
-import CovidTestImage from "./CovidTestImage.png";
+import NegativeTest from "./NegativeTest.png";
+import PositiveTest from "./PositiveTest.png";
 
 export default class ResultsPage extends React.Component {
     constructor(props) {
@@ -15,24 +16,40 @@ export default class ResultsPage extends React.Component {
 
     render() {
         let message;
+        let image;
+
+        // Set image and message depending on how many models predict the person would test positive
 
         if (this.state.numPos / 3 > 0.5) {
-            // If more than half of the models indicate a positive test
             message =
                 "This indicates that it is likely you would test positive for COVID-19.";
+
+            image = (
+                <img
+                    src={PositiveTest}
+                    height="300"
+                    width="350"
+                    alt="COVID Test"
+                />
+            );
         } else {
             message =
                 "This indicates that it is unlikely you would test positive for COVID-19.";
+
+            image = (
+                <img
+                    src={NegativeTest}
+                    height="300"
+                    width="350"
+                    alt="COVID Test"
+                />
+            );
         }
 
         return (
             <div className="results">
-                <img
-                    src={CovidTestImage}
-                    height="300"
-                    width="317"
-                    alt="COVID Test"
-                />
+                {image}
+
                 <h1>
                     {this.state.numPos} of our models predict that you would
                     test positive for COVID-19.
