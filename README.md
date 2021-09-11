@@ -15,15 +15,21 @@ The models had the following accuracies when the dataset was shuffled, the model
 
 __The code for the Machine Learning Models is located in the 'models' file of this repository.__
 
+__The repl.it link for the Machine Learning Models is https://replit.com/@absarsy17/covidMLmodels__
+
 ## The API
 The API was programmed using in _Python_ using the _Flask_ framework. To send a request to API, the answers to the survey should be appended to the URL and be seperated by commas (1s should be used to represent yes answers and 0s should be used to represent no answers). The API then uses the machine learning models to predict whether or not the person has COVID-19 and returns the data in a JSON-format.
 
 __The code for the API is located in the 'API' folder of this repository.__
 
+__The repl.it link for the API is https://replit.com/@absarsy17/covidMLapi__
+
 ## The frontend UI
 The frontend UI was programmed using the _React_ framework. Once the user has completed the survey using the frontend, a request is sent to the API and the data returned is then displayed on the frontend. 
 
 __The code for the frontend UI is located in the 'UI' folder of this repository.__
+
+__The repl.it link for the UI is https://replit.com/@absarsy17/covidML__
 
 ## Additional Information
 The entire project is hosted using repl.it (this includes both the API and the frontend). Since repl.it shuts down web servers after a while of inactivity, I used Uptime Robot to repeatedly send requests to both the API and the frontend to make sure they don't shut down due to inactivity.
